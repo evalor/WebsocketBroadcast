@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试客户端</title>
+</head>
+<body>
+<script>
+    var funcOnMessage = function (ev) {
+        console.log(ev.data);
+    };
+    for (var i = 0; i < 255; i++) {
+        eval("var client_" + i + " = new WebSocket('ws://127.0.0.1:9501');");
+        eval("client_" + i + ".onmessage = funcOnMessage;");
+    }
+</script>
+</body>
+</html>

@@ -8,6 +8,7 @@
 
 namespace EasySwoole\EasySwoole;
 
+use App\Process\ClientProcess;
 use App\Utility\Pool\RedisPool;
 use App\WebSocket\WebSocketEvents;
 use App\WebSocket\WebSocketParser;

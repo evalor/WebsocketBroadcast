@@ -18,7 +18,9 @@
         "easyswoole/easyswoole": "3.x-dev",
         "easyswoole/swoole-ide-helper": "^1.0",
         "ext-redis": "*",
-        "ext-json": "*"
+        "ext-json": "*",
+        "ext-pcntl": "*",
+        "ext-posix": "*"
     },
     "require-dev": {
         "composer/composer": "^1.6"
